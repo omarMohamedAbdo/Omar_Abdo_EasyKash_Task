@@ -1,0 +1,27 @@
+h1
+{
+    text-align: center;
+    color: #4CAF50;
+}
+#Trans {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #Trans td, #Trans th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #Trans tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #Trans tr:hover {background-color: #ddd;}
+  
+  #Trans th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }

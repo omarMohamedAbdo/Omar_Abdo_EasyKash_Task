@@ -1,0 +1,57 @@
+<h1>Seller Transactions</h1>
+<hr>
+<table id="Trans">
+  <tr>
+    <th>
+      ID
+    </th>
+    <th>
+      Title
+    </th>
+    <th>
+      fees
+    </th>
+    <th>
+      Amount
+    </th>
+  </tr>
+  <tr *ngFor=
+  "let trans of transactions | paginate : {
+          itemsPerPage: pageSize,
+          currentPage: page,
+          totalItems: count
+        };
+  let i = index
+">
+    <td>
+      {{trans.id}}
+    </td>
+    <td>
+      {{trans.title}}
+    </td>
+    <td>
+      {{trans.fees}}
+    </td>
+    <td>
+      {{trans.amount}}
+    </td>
+  </tr>
+</table>
+
+<div style="display: inline-block;">
+  <pagination-controls
+    previousLabel="Prev"
+    nextLabel="Next"
+    responsive="true"
+    (pageChange)="handlePageChange($event)"
+  ></pagination-controls>
+</div>
+
+<div style="display: inline-block;margin-left: 50px;">
+  Items per Page:
+  <select (change)="handlePageSizeChange($event)">
+    <option *ngFor="let size of pageSizes">
+      {{ size }}
+    </option>
+  </select>
+</div>

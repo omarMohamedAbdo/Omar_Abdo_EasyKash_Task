@@ -1,0 +1,35 @@
+{
+  "name": "omar-abdo-easykash-endpoint",
+  "version": "1.0.0",
+  "description": "Node.js Rest Apis with Express, Sequelize pagination & MySQL.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "express",
+    "sequelize",
+    "pagination",
+    "mysql",
+    "rest",
+    "api"
+  ],
+  "author": "Omar Abdo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.12"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "request": "^2.88.2"
+  }
+}
