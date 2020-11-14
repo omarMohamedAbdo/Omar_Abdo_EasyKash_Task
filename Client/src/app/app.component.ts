@@ -12,6 +12,7 @@ export class AppComponent implements OnInit{
   transactions: any;
   currentTransaction = null;
   currentIndex = -1;
+  seller_id='';
 
   page = 1;
   count = 0;
@@ -24,9 +25,13 @@ export class AppComponent implements OnInit{
     this.retrieveTransactions(); 
   }
 
-  getRequestParams(page, pageSize) {
+  getRequestParams(search_seller_id, page, pageSize) {
     // tslint:disable-next-line:prefer-const
     let params = {};
+
+    if (search_seller_id) {
+      params[`seller_id`] = search_seller_id;
+    }
 
     if (page) {
       params[`page`] = page - 1;
@@ -40,7 +45,7 @@ export class AppComponent implements OnInit{
   }
 
   retrieveTransactions() {
-    const params = this.getRequestParams( this.page, this.pageSize);
+    const params = this.getRequestParams(this.seller_id, this.page, this.pageSize);
 
     this.dataService.getAll(params)
       .subscribe(

@@ -1,5 +1,18 @@
 <h1>Seller Transactions</h1>
 <hr>
+<br>
+<input
+  style="display: inline-block;margin-left: 40%;"
+  type="text"
+  placeholder="Search by seller id"
+  [(ngModel)]="seller_id"
+/>
+
+<button style="display: inline-block;margin-left: 50px;" (click)="retrieveTransactions()">
+  Search
+</button>
+<br>
+<br>
 <table id="Trans">
   <tr>
     <th>
@@ -55,3 +68,4 @@
     </option>
   </select>
 </div>
+
