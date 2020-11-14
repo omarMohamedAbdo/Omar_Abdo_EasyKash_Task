@@ -19,6 +19,7 @@ $ cd Server
 $ npm install
 $ npm start
 ```
+The server will run on : http://localhost:8080/transaction
 
 ## To run Client :
 
@@ -27,6 +28,8 @@ $ cd Client
 $ npm install
 $ ng serve
 ```
+The Client will run on : http://localhost:4200
+
 ## To run tests :
 
 ```sh
