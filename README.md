@@ -5,6 +5,8 @@
   - **Online Link to Full project deployed on heroku : https://omar-abdo-easykash-task.herokuapp.com/**
 
   - **Online Link to End point deployed on heroku : https://aqueous-oasis-40668.herokuapp.com/transaction**
+  
+  Hint: I have put some dummy data, you can try with ?seller_id=1 or ?seller_id=2
 
 ### Installation :
 
