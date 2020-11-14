@@ -31,12 +31,3 @@ describe('Integration Test Get /transaction', () => {
           });
     });
 });
-
-// describe ('Test Route /transaction', function() {
-//     it('it should respond with status 200', function(done){
-//         request('http://localhost:8080/transaction', function(error, response, body) {
-//             expect(response.statusCode).to.equal(200);
-//             done();
-//         });
-//     });
-// })
